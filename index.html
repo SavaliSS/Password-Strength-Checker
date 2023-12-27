@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Password Strength Meter</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>Password Strength Meter<br></header>
+      <form action="#">
+        <div class="field">
+          <input id="trigger" class="input" type="password" placeholder="Type your password">
+          <span class="showBtn">SHOW</span>
+        </div>
+        <!--field-->
+        <div class="indicator">
+          <span class="weak"></span>
+          <span class="medium"></span>
+          <span class="strong"></span>
+        </div>
+        <!--indicator-->
+        <div class="text"></div>
+
+        <!-- Strong Password Suggestion Section -->
+        <div class="strong-suggestion">
+          <h3>Strong Password Suggestions</h3>
+          <ul>
+            <li>Use a combination of uppercase and lowercase letters</li>
+            <li>Include numbers and special characters</li>
+            <li>Avoid using easily guessable information (e.g., your name, birthdate)</li>
+            <!-- Add more suggestions as needed -->
+          </ul>
+        </div>
+      </form>
+    </div>
+    <!--container-->
+    <script src="scripts.js"></script>
+  </body>
+</html>
